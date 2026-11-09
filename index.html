@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Your Name, a full-stack developer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bin" aria-hidden="true"></canvas>
+
+<header class="nav">
+  <a href="#home" class="logo">&lt;<b>YN</b>/&gt;</a>
+  <nav id="menu">
+    <a href="#about">about</a>
+    <a href="#education">education</a>
+    <a href="#skills">skills</a>
+    <a href="#experience">experience</a>
+    <a href="#projects">projects</a>
+    <a href="#showcase">showcase</a>
+    <a href="#contact">contact</a>
+  </nav>
+  <button id="burger" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <p class="bin-hi">01001000 01101001 <span>// "Hi"</span></p>
+    <h1><span id="name" data-text="Your Name">Your Name</span></h1>
+    <p class="role">I am a <span id="role"></span><i class="cursor"></i></p>
+    <p class="lead">I turn complex problems into clean, fast and reliable software, from the database to the pixel.</p>
+    <div class="cta">
+      <a href="#projects" class="btn primary">View my work <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#contact" class="btn">Contact me</a>
+    </div>
+    <ul class="stats">
+      <li><b>5+</b> years of experience</li>
+      <li><b>40+</b> projects shipped</li>
+      <li><b>20+</b> happy clients</li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <h2 data-decode>About</h2>
+    <div class="about reveal">
+      <div class="avatar"><i class="fa-solid fa-user-astronaut"></i><img src="images/profile.jpg" alt="Your Name" onerror="this.remove()"></div>
+      <div>
+        <p>Hi, I'm a full-stack developer who loves building products people actually enjoy using. I care about performance, accessibility and code that the next developer can read at 2 a.m.</p>
+        <p>I work with JavaScript, Python and cloud tools, and I'm happiest on small teams where I can own a feature from idea to production. Outside of code, I contribute to open source and mentor beginners.</p>
+        <ul class="facts">
+          <li><i class="fa-solid fa-location-dot"></i> Casablanca, Morocco</li>
+          <li><i class="fa-solid fa-language"></i> Arabic, French, English</li>
+          <li><i class="fa-solid fa-circle-check"></i> Available for freelance</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2 data-decode>Education</h2>
+    <div class="timeline">
+      <article class="reveal"><time>2021 - 2023</time><h3>Master's in Software Engineering</h3><p class="place">University Name</p><p>Distributed systems, cloud architecture and a thesis on real-time data pipelines.</p></article>
+      <article class="reveal"><time>2018 - 2021</time><h3>Bachelor's in Computer Science</h3><p class="place">University Name</p><p>Algorithms, databases and web development. Graduated with honors.</p></article>
+      <article class="reveal"><time>2022</time><h3>Cloud Practitioner Certification</h3><p class="place">Online Academy</p><p>Infrastructure, deployment and cost-aware cloud design.</p></article>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 data-decode>Skills</h2>
+    <p class="hint reveal">Each skill level is shown in binary: every <b>1</b> is a step of mastery.</p>
+    <div class="skills">
+      <div class="group reveal"><h3><i class="fa-solid fa-display"></i> Frontend</h3>
+        <div class="skill" data-level="90"><span>HTML &amp; CSS</span></div>
+        <div class="skill" data-level="90"><span>JavaScript</span></div>
+        <div class="skill" data-level="80"><span>React</span></div>
+        <div class="skill" data-level="70"><span>TypeScript</span></div></div>
+      <div class="group reveal"><h3><i class="fa-solid fa-server"></i> Backend</h3>
+        <div class="skill" data-level="80"><span>Node.js &amp; Express</span></div>
+        <div class="skill" data-level="70"><span>Python</span></div>
+        <div class="skill" data-level="80"><span>MongoDB &amp; SQL</span></div>
+        <div class="skill" data-level="70"><span>REST &amp; GraphQL</span></div></div>
+      <div class="group reveal"><h3><i class="fa-solid fa-toolbox"></i> Tools</h3>
+        <div class="skill" data-level="90"><span>Git &amp; GitHub</span></div>
+        <div class="skill" data-level="70"><span>Docker</span></div>
+        <div class="skill" data-level="70"><span>Linux &amp; CLI</span></div>
+        <div class="skill" data-level="60"><span>CI/CD</span></div></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2 data-decode>Experience</h2>
+    <div class="timeline">
+      <article class="reveal"><time>2024 - Present</time><h3>Senior Full-Stack Developer</h3><p class="place">Company Name</p><p>Lead a team of four on a SaaS dashboard. Cut page load time by 45% and automated every deployment.</p></article>
+      <article class="reveal"><time>2022 - 2024</time><h3>Full-Stack Developer</h3><p class="place">Startup Name</p><p>Built REST APIs and a React client from scratch. Wrote the test suite that caught 200+ bugs before release.</p></article>
+      <article class="reveal"><time>2021 - 2022</time><h3>Frontend Intern</h3><p class="place">Agency Name</p><p>Turned designs into responsive, accessible websites for 10+ clients.</p></article>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 data-decode>Projects</h2>
+    <div class="projects">
+      <article class="card reveal"><div class="top"><i class="fa-solid fa-chart-line"></i><span><a href="#" aria-label="Source code"><i class="fa-brands fa-github"></i></a><a href="#" aria-label="Live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></span></div>
+        <h3>DataPulse</h3><p>Real-time analytics dashboard used by 2,000 people every day.</p><ul class="tags"><li>React</li><li>Node.js</li><li>WebSocket</li></ul></article>
+      <article class="card reveal"><div class="top"><i class="fa-solid fa-terminal"></i><span><a href="#" aria-label="Source code"><i class="fa-brands fa-github"></i></a><a href="#" aria-label="Live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></span></div>
+        <h3>shipit-cli</h3><p>Command-line tool that deploys any project with one command. 800+ stars.</p><ul class="tags"><li>Python</li><li>Docker</li><li>SSH</li></ul></article>
+      <article class="card reveal"><div class="top"><i class="fa-solid fa-cart-shopping"></i><span><a href="#" aria-label="Source code"><i class="fa-brands fa-github"></i></a><a href="#" aria-label="Live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></span></div>
+        <h3>ShopLite</h3><p>MERN e-commerce platform with cart, accounts and an admin panel.</p><ul class="tags"><li>MongoDB</li><li>Express</li><li>React</li></ul></article>
+    </div>
+  </section>
+
+  <section id="showcase">
+    <h2 data-decode>Showcase</h2>
+    <p class="hint reveal">Screenshots and demo videos of my projects. Click one to open it.</p>
+    <div class="chips" id="filters">
+      <button class="on" data-f="all">All</button><button data-f="image">Images</button><button data-f="video">Videos</button>
+    </div>
+    <div class="gallery" id="gallery">
+      <figure class="shot" data-type="image" data-src="images/project1.jpg" data-title="DataPulse dashboard"><div class="thumb"><i class="fa-solid fa-chart-line"></i></div><figcaption>DataPulse dashboard</figcaption></figure>
+      <figure class="shot" data-type="video" data-src="videos/demo1.mp4" data-poster="images/video1.jpg" data-title="ShopLite checkout demo"><div class="thumb"><i class="fa-solid fa-cart-shopping"></i><span class="play"><i class="fa-solid fa-play"></i></span></div><figcaption>ShopLite checkout demo</figcaption></figure>
+      <figure class="shot" data-type="image" data-src="images/project2.jpg" data-title="shipit-cli in the terminal"><div class="thumb"><i class="fa-solid fa-terminal"></i></div><figcaption>shipit-cli in the terminal</figcaption></figure>
+      <figure class="shot" data-type="image" data-src="images/project3.jpg" data-title="ShopLite storefront"><div class="thumb"><i class="fa-solid fa-store"></i></div><figcaption>ShopLite storefront</figcaption></figure>
+      <figure class="shot" data-type="video" data-src="videos/demo2.mp4" data-poster="images/video2.jpg" data-title="DataPulse live charts"><div class="thumb"><i class="fa-solid fa-chart-pie"></i><span class="play"><i class="fa-solid fa-play"></i></span></div><figcaption>DataPulse live charts</figcaption></figure>
+      <figure class="shot" data-type="image" data-src="images/project4.jpg" data-title="Mobile layout"><div class="thumb"><i class="fa-solid fa-mobile-screen"></i></div><figcaption>Mobile layout</figcaption></figure>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <h2 data-decode>Let's build something</h2>
+  <p>Have a project in mind or want to say hi? My inbox is open.</p>
+  <a class="btn primary" href="mailto:you@example.com"><i class="fa-solid fa-envelope"></i> you@example.com</a>
+  <div class="social">
+    <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#" aria-label="Dev.to"><i class="fa-brands fa-dev"></i></a>
+  </div>
+  <small>&copy; <span id="year"></span> Your Name &middot; 01000010 01110101 01101001 01101100 01110100 <span>// "Built"</span></small>
+</footer>
+
+<dialog id="lb">
+  <button id="lbClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+  <div id="lbBody"></div>
+  <p id="lbCap"></p>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
